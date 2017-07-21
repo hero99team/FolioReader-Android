@@ -586,6 +586,7 @@ public class FolioPageFragment extends Fragment {
                         "setMediaOverlayStyleColors('#C0ED72','#C0ED72')");
         String toInject = "\n" + cssPath + "\n" + jsPath + "\n</head>";
         htmlContent = htmlContent.replace("</head>", toInject);
+        htmlContent = htmlContent.replace("style=\"width:1920px;height:1200px\"", "style=\"height:1200px\"");
 
         String classes = "";
         Config config = Config.getConfig();
